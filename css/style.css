@@ -1,0 +1,502 @@
+/* offline font connectivity */
+
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/barlow-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/barlow-v12-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/barlow-v12-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/barlow-v12-latin-regular.svg#Barlow') format('svg');
+    /* Legacy iOS */
+}
+
+/* barlow-500 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-v12-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/barlow-v12-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/barlow-v12-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/barlow-v12-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/barlow-v12-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/barlow-v12-latin-500.svg#Barlow') format('svg');
+    /* Legacy iOS */
+}
+
+/* barlow-600 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/barlow-v12-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/barlow-v12-latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/barlow-v12-latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/barlow-v12-latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/barlow-v12-latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/barlow-v12-latin-600.svg#Barlow') format('svg');
+    /* Legacy iOS */
+}
+
+/* barlow-700 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/barlow-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/barlow-v12-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/barlow-v12-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/barlow-v12-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/barlow-v12-latin-700.svg#Barlow') format('svg');
+    /* Legacy iOS */
+}
+
+/* ========================================== Default CSS ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Barlow', sans-serif !important;
+}
+
+body {
+    font-family: 'Barlow', sans-serif !important;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul,
+ol {
+    list-style: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --orange_color: #ff4d29;
+    --white_color: #fff;
+    --black_color: #000;
+    --text_color: #092032;
+    --button_hover_color: #d64022;
+    --p-tag-color: #516170;
+}
+
+.bg-orange {
+    background-color: #ff4d29;
+}
+
+.text-orange {
+    color: #ff4d29;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.btn-brand {
+    background-color: var(--orange_color) !important;
+    color: var(--white_color) !important;
+    transition: 0.5s;
+}
+
+.btn-brand:hover {
+    background-color: var(--button_hover_color) !important;
+}
+
+.title_text {
+    /* width: 450px !important; */
+    margin-bottom: 36px;
+}
+
+/*  ========================================== Header Section CSS ================================= */
+.contact li {
+    margin-right: 10px;
+}
+
+.contact li i {
+    font-size: 13px;
+}
+
+.social ul li a {
+    width: 28px;
+    height: 28px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: var(--white_color);
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.social ul li a:hover {
+    background-color: var(--white_color);
+    color: var(--orange_color);
+}
+
+
+.sticky{
+    position: fixed!important;
+    top: 0;
+    width: 100%;
+    animation: fade 1s ease-in-out;
+    z-index: 200;
+}
+
+@keyframes fade{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: var(--orange_color) !important;
+    transition: 0.5s;
+}
+
+.nav-item .nav-link {
+    font-weight: 500;
+    color: var(--text_color);
+}
+
+/*  ========================================== slider Section CSS ================================= */
+
+.slider_image {
+    background-size: cover;
+    background-position: center;
+}
+
+.slid_img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/bg_banner2.jpg);
+    padding: 225px 0px;
+}
+
+.slid_img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/bg_banner1.jpg);
+    padding: 225px 0px;
+}
+
+.slider_btn_2 {
+    color: var(--white_color) !important;
+    border: 1px solid var(--white_color) !important;
+    transition: 0.5s;
+}
+
+.slider_btn_2:hover {
+    background-color: var(--white_color) !important;
+    color: var(--black_color) !important;
+}
+
+/* nav and dot section css */
+
+#slider_1 .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 5px;
+    color: var(--white_color) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+    place-items: center;
+    border-radius: 50% !important;
+}
+
+#slider_1 .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 5px;
+    color: var(--white_color) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+    place-items: center;
+    border-radius: 50% !important;
+}
+
+#slider_1 .owl-nav button.owl-prev:hover,
+#slider_1 .owl-nav button.owl-next:hover {
+    background-color: var(--orange_color) !important;
+}
+
+/*  ========================================== about Section CSS ================================= */
+.info_box img {
+    width: 90px;
+}
+
+/*  ========================================== counting Section CSS ================================= */
+
+.counting {
+    background-image: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(../image/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*  ========================================== services Section CSS ================================= */
+.services_text {
+    /* padding: 32px; */
+}
+
+.services_text img {
+    width: 90px;
+}
+
+/*  ========================================== portfolio Section CSS ================================= */
+
+.work {
+    background-color: rgb(248, 249, 250);
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.item .overlay {
+    width: 100%;
+    height: 220px !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--text_color) 100%);
+}
+
+.slider_2_info {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: white;
+}
+
+.slider_2_info h6::before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    display: inline-block;
+    background: var(--orange_color);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#slider_2.owl-theme .owl-dots .owl-dot.active span {
+    background-color: var(--orange_color) !important;
+}
+
+/*  ========================================== portfolio Section CSS ================================= */
+.social_1 ul li a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: var(--white_color);
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.social_1 ul li a:hover {
+    background-color: var(--white_color);
+    color: var(--orange_color);
+}
+
+.member_image {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.team_member .social_1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.team_member .team_overlay {
+    width: 100%;
+    height: 404.23px;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    background-color: rgba(255, 77, 41, 0.7);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.team_member:hover .team_overlay {
+    opacity: 1;
+    top: 0;
+}
+
+.team_member:hover .social_1 {
+    opacity: 1;
+    top: 50%;
+}
+
+/*  ========================================== review Section CSS ================================= */
+
+.review {
+    background-image: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../image/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reviews_slider_info {
+    max-width: 768px;
+}
+
+.reviews_slider_person img {
+    width: 80px !important;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.reviews_slider_info .reviews_slider_star {
+    color: var(--orange_color);
+}
+.reviews_slider_info .reviews_slider_icon {
+    font-size: 120px;
+    position: absolute;
+    opacity: 0.1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white_color);
+    line-height: 1;
+  }
+  #slider_3.owl-theme .owl-dots .owl-dot.active span {
+    background-color: var(--orange_color) !important;
+}
+
+/*  ========================================== blog Section CSS ================================= */
+
+.blog_post{
+    position: relative;
+}
+.tag{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.contant{
+    padding: 32px;
+}
+
+/*  ========================================== footer Section CSS ================================= */
+
+.footer_text{
+    width: 50%;
+}
+footer{
+    background-image: linear-gradient(-90deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../image/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer-top{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.social_2 ul li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: var(--white_color);
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.social_2 ul li a:hover {
+    background-color: var(--white_color);
+    color: var(--orange_color);
+}
+.conditions-section{
+    margin: 20px 0;
+}
+.footer-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
